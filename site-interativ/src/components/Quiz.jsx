@@ -1,41 +1,19 @@
 // src/components/Quiz.jsx
-import React, { useState } from 'react';
+import React from 'react';
+import Header from '../Pages/Header';
+import Footer from '../Pages/footer';
 
-const Quiz = ({ quizData }) => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [input, setInput] = useState('');
-
-  const handleSubmit = () => {
-    if (input.toLowerCase() === quizData[currentQuestion].answer.toLowerCase()) {
-      setScore(score + 1);
-    }
-    setInput('');
-    setCurrentQuestion(currentQuestion + 1);
-  };
-
+const Quiz = () => {
   return (
-    <div>
-      <h2>Quiz de Energia</h2>
-      {currentQuestion < quizData.length ? (
-        <>
-          <p>{quizData[currentQuestion].question}</p>
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Sua resposta"
-          />
-          <button
-            onClick={handleSubmit}
-          
-          >
-            Enviar
-          </button>
-        </>
-      ) : (
-        <p>Sua pontuação: {score}</p>
-      )}
+    <div className="flex flex-col min-h-screen">
+      <Header /> 
+      
+      <main className="flex-grow bg-white p-10">
+        {/* conteúdo futuro */}
+        <h2 className="text-center text-gray-500">Quiz </h2>
+      </main>
+      
+      <Footer /> 
     </div>
   );
 };

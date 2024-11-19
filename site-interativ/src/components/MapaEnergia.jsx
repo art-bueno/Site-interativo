@@ -1,26 +1,18 @@
-// src/components/MapaEnergia.jsx
-import React, { useEffect, useState } from 'react';
-
+import Header from '../Pages/Header';
+import Footer from '../Pages/footer'; 
+import React from 'react';
 
 const MapaEnergia = () => {
-  const [countryData, setCountryData] = useState([]);
-
-  useEffect(() => {
-    const loadData = async () => {
-      const data = await fetchEnergyData();
-      setCountryData(data.countryData);
-    };
-    loadData();
-  }, []);
-
   return (
-    <div>
-      <h2>Fontes de Energia por País</h2>
-      {countryData.map((country, index) => (
-        <div key={index} className="mb-2">
-          <p>{country.country}: {country.primarySource}</p>
-        </div>
-      ))}
+    <div className="flex flex-col min-h-screen">
+      <Header /> 
+      
+      <main className="flex-grow bg-white p-10">
+        {/* conteúdo futuro */}
+        <h2 className="text-center text-gray-500">Mapa de Energia </h2>
+      </main>
+      
+      <Footer /> 
     </div>
   );
 };

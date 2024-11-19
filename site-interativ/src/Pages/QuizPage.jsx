@@ -1,4 +1,4 @@
-// src/Pages/QuizPage.jsx
+
 import React, { useEffect, useState } from 'react';
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header'
-import Footer from './footer';
+import Header from '../Pages/Header'
+import Footer from '../Pages/footer';
 
 const Home = () => (
   <div className="flex flex-col min-h-screen">

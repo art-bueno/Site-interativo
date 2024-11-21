@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import Header from '../Pages/Header';
-import Footer from '../Pages/footer';
 
 const Login = ({ onLogin }) => {
-    <Header />
   const [userName, setUserName] = useState('');
 
   const handleLogin = () => {
     if (userName.trim()) {
-      onLogin(userName); // Chama a função de login passada como prop
+      onLogin(userName);
     } else {
       alert('Por favor, insira um nome válido.');
     }
@@ -17,7 +14,7 @@ const Login = ({ onLogin }) => {
   return (
     <div className="grid place-items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-md shadow-md text-center">
-        <h1 className="text-3xl font-bold mb-6">Login</h1>
+        <h1 className="text-3xl font-bold text-green-500 mb-6">Login</h1>
         <input
           type="text"
           placeholder="Digite seu nome"
@@ -27,14 +24,12 @@ const Login = ({ onLogin }) => {
         />
         <button
           onClick={handleLogin}
-          className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md w-full"
+          className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md w-full"
         >
           Entrar
         </button>
       </div>
-      <Footer/>
     </div>
-    
   );
 };
 

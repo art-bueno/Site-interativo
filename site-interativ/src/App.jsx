@@ -1,10 +1,10 @@
-// src/App.jsx
+
 import React from 'react';
 import AppRoutes from './Routes/AppRoutes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App m-auto">
       <AppRoutes />
     </div>
   );

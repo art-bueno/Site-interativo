@@ -24,7 +24,7 @@ const Home = () => (
 
       <img
         className="w-[750px] h-[500px] mt-6 object-cover rounded-xl shadow-lg"
-        src="https://mail.google.com/mail/u/0?ui=2&ik=48741e7373&attid=0.1&permmsgid=msg-a:r1789884658466936766&th=193515ec229eee88&view=fimg&fur=ip&permmsgid=msg-a:r1789884658466936766&sz=s0-l75-ft&attbid=ANGjdJ-XBafHzK8TwdhVTV7estMZtzr0oyjSzHJufv8qSFkqTm6ClvtzFlx7yP5v-PLNxqb3gi-uf-Jl1hPcEjt5EPHHP9mk6ArLbneXy3uS1SIJLpP-LGDEOdNJFZg&disp=emb&realattid=ii_m3s169dw0&zw"
+        src=""
         alt="Indústria"
       />
     </main>

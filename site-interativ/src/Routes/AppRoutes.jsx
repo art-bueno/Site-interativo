@@ -6,12 +6,12 @@ import SobreNós from '../components/SobreNós';
 import Footer from '../Pages/footer';
 import Header from '../Pages/Header';
 import Dashboard from '../components/Dashboard';
-import Login from '../components/Login'; // Novo componente de Login
+import Login from '../components/Login'; 
 
 const AppRoutes = () => {
   const [userName, setUserName] = useState('');
 
-  // Recupera o nome do usuário do localStorage ao carregar a aplicação
+  // Recupera o nome do usuário do localStorage 
   useEffect(() => {
     const storedName = localStorage.getItem('userName');
     if (storedName) {
@@ -42,7 +42,7 @@ const AppRoutes = () => {
         <Route path="/Login" element={<Login onLogin={handleLogin} />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Produto" element={<Produto />} />
-        <Route path="/SobreNós" element={<SobreNós userName={userName} />} />
+        <Route path="/SobreNós" element={<SobreNós />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Footer" element={<Footer />} />
         <Route path="/Header" element={<Header />} />

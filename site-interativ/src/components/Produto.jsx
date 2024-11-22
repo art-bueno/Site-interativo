@@ -16,6 +16,7 @@ const Produto = () => {
           <h2 className="text-2xl font-semibold text-gray-800">
             Juntos, transformamos o futuro energético.
           </h2>
+          <img src="https://files.oaiusercontent.com/file-EbSTjFEtMlVEauXG9smCQT53?se=2024-11-22T00%3A55%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dcb263fa3-27c1-4d32-b8b7-056d58d79f7c.webp&sig=7SEluNLkCHRmtoYybNYPhnRjZiNsVaTOeT5ASx/G5Qo%3D" alt="Prototipo" />
         </div>
       </main>
     </div>

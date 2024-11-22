@@ -4,9 +4,9 @@ const Dashboard = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "https://via.placeholder.com/800x400?text=Dashboard+1",
-    "https://via.placeholder.com/800x400?text=Dashboard+2",
-    "https://via.placeholder.com/800x400?text=Dashboard+3"
+    'https://mail.google.com/mail/u/0?ui=2&ik=48741e7373&attid=0.1&permmsgid=msg-a:r8323982820861329928&th=1935155e8829425b&view=att&disp=safe&realattid=f_m3s0tndh0&zw',
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bSEK4jQUHeGEll69VWBJzrjVbkL2sQZGfQ&s",
+    
   ];
 
   const nextSlide = () => {

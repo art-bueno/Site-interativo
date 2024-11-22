@@ -6,7 +6,7 @@ import SobreNós from '../components/SobreNós';
 import Footer from '../Pages/footer';
 import Header from '../Pages/Header';
 import Dashboard from '../components/Dashboard';
-import Login from '../components/Login';
+import Login from '../components/Login'; // Novo componente de Login
 
 const AppRoutes = () => {
   const [userName, setUserName] = useState('');
@@ -33,27 +33,24 @@ const AppRoutes = () => {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Header userName={userName} onLogout={handleLogout} />
-        <Routes>
-          {/* Redireciona para Login se o usuário não estiver logado */}
-          <Route
-            path="/"
-            element={userName ? <Navigate to="/Home" /> : <Navigate to="/Login" />}
-          />
-          <Route
-            path="/Login"
-            element={<Login onLogin={handleLogin} />}
-          />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Produto" element={<Produto />} />
-          <Route path="/SobreNós" element={<SobreNós userName={userName} />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Header userName={userName} onLogout={handleLogout} />
+      <Routes>
+        <Route
+          path="/"
+          element={userName ? <Navigate to="/Home" /> : <Navigate to="/Login" />}
+        />
+        <Route path="/Login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Produto" element={<Produto />} />
+        <Route path="/SobreNós" element={<SobreNós userName={userName} />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/Header" element={<Header />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };
 
 export default AppRoutes;
+

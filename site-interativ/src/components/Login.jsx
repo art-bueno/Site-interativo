@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
   return (
     <div className="grid place-items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-md shadow-md text-center">
-        <h1 className="text-3xl font-bold text-green-500 mb-6">Login</h1>
+        <h1 className="text-3xl font-bold text-green-500 mb-6">Login</h1>   
         <input
           type="text"
           placeholder="Digite seu nome"
